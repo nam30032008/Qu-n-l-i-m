@@ -38,7 +38,7 @@ so_sv_dat = (df["Tổng kết"]>=5.0).sum()
 st.write("Điểm trung bình lớp:,{dtb_lop:.2f}")
 st.write("Điểm cao nhất lớp:,{max_lop["Họ và tên"]}({max_sv["Tong_ket"]}điểm)")
 st.write("Điểm thấp nhất lớp:",{min_lop["Họ và tên"]}({min_sv["Tong_ket"]}điểm))
-st.write("Số lượng sinh viên đạt:(điểm tổng kết>=5.0)",{so_sv_dat}sinh viên")
+st.write(f"Số lượng sinh viên đạt(điểm tổng kết>=5.0):{so_sv_dat}sinh viên")
 #3 Tra cứu theo sinh viên
 st.subheader("Tra cứu điểm theo sinh viên")
 selected_student =st.selectbox("Chọn sinh viên cần tra cứu",df["Họ và tên"])
