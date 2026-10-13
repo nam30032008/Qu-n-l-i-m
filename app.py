@@ -32,7 +32,7 @@ min_lop = df["Tong_ket"].min()
 so_sv_dat = (df["Tổng kết"]>=5.0).sum()
 st.write("Điểm trung bình lớp:,{dtb_lop:.2f}")
 st.write(f"Điểm cao nhất lớp:{max_lop}")
-st.write(f"Điểm thấp nhất lớp:",{min_lop}")
+st.write(f"Điểm thấp nhất lớp:{min_lop}")
 st.write(f"Số lượng sinh viên đạt(điểm tổng kết>=5.0):{so_sv_dat}sinh viên")
 #3 Tra cứu theo sinh viên
 st.subheader("Tra cứu điểm theo sinh viên")
