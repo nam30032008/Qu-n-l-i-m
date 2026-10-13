@@ -10,7 +10,7 @@ data={"Họ và tên":["Nguyễn Văn An","Trần Thái Bình","Lê Văn Chi",'P
 df = pd.DataFrame(data)
 df["Tong_ket"] =(0.2*df["Chuyên cần"])+(0.3*df["Giữa kỳ"])+(0.5*df["Cuối kỳ"])
 df["Tong_ket"]= df['Tong_ket'].round(2)
-def xep_loai(diem)
+def xep_loai(diem):
   if diem >=8.5:
    return"Giỏi"
    elif diem >=7.0:
