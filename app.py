@@ -3,10 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 st.title("Quản lý điểm")
 #1 Dữ liệu 10 sinh viên
- data={"Họ và tên":["Nguyễn Văn An","Trần Thái Bình","Lê Văn Chi",'Phạm Thị Dung','Hoàng Văn Hải''Vũ Thị Lan','Đỗ Văn Minh','Bùi Thị Nam','Ngô Văn Phúc','Dương Thị Trang'],
-    "Chuyên cần" :[8.0,9.0,7.5,8.5,6.0,9.5,7.0,8.0,6.5,9.0],
+data={"Họ và tên":["Nguyễn Văn An","Trần Thái Bình","Lê Văn Chi",'Phạm Thị Dung','Hoàng Văn Hải''Vũ Thị Lan','Đỗ Văn Minh','Bùi Thị Nam','Ngô Văn Phúc','Dương Thị Trang'],
+"Chuyên cần" :[8.0,9.0,7.5,8.5,6.0,9.5,7.0,8.0,6.5,9.0],
 "Giữa Kỳ":[7.5,8.0,6.5,9.0,5.5,8.5,7.0,7.5,6.0,8,5],
-     "Cuối kỳ" :[8.0,8.5,7.0,8.5,5.0,9.0,6.5,8.0,6.0,8.5],}
+"Cuối kỳ" :[8.0,8.5,7.0,8.5,5.0,9.0,6.5,8.0,6.0,8.5],}
 df = pd.DataFrame(data)
 df["Tong_ket"] =(0.2*df["Chuyên cần"])+(0.3*df["Giữa kỳ"])+(0.5*df["Cuối kỳ"])
 df["Tong_ket"]= df['Tong_ket'].round(2)
