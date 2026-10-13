@@ -11,11 +11,11 @@ df = pd.DataFrame(data)
 df["Tong_ket"] =(0.2*df["Chuyên cần"])+(0.3*df["Giữa kỳ"])+(0.5*df["Cuối kỳ"])
 df["Tong_ket"]= df['Tong_ket'].round(2)
 def xep_loai(diem):
-  if diem >=8.5:
+if diem >=8.5:
    return"Giỏi"
-   elif diem >=7.0:
+elif diem >=7.0:
    return"Khá"
-  elif diem >=5.0:    
+elif diem >=5.0:    
 return"Trung Bình"
   else:
     return"Yếu"
