@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 st.title("Quản lý điểm")
 #1 Dữ liệu 10 sinh viên
-data={"Họ và tên":["Nguyễn Văn An","Trần Thái Bình","Lê Văn Chi",'Phạm Thị Dung','Hoàng Văn Hải''Vũ Thị Lan','Đỗ Văn Minh','Bùi Thị Nam','Ngô Văn Phúc','Dương Thị Trang'],
+data={"Họ và tên":["Nguyễn Văn An","Trần Thái Bình","Lê Văn Chi",'Phạm Thị Dung','Hoàng Văn Hải','Vũ Thị Lan','Đỗ Văn Minh','Bùi Thị Nam','Ngô Văn Phúc','Dương Thị Trang'],
 "Chuyên cần" :[8.0,9.0,7.5,8.5,6.0,9.5,7.0,8.0,6.5,9.0],
 "Giữa Kỳ":[7.5,8.0,6.5,9.0,5.5,8.5,7.0,7.5,6.0,8.5],
 "Cuối kỳ" :[8.0,8.5,7.0,8.5,5.0,9.0,6.5,8.0,6.0,8.5],}
@@ -29,8 +29,8 @@ st.subheader("Thống kê kết quả học tập của lớp")
 dtb_lop = df["Tong_ket"].mean()
 max_lop = df["Tong_ket"].max()
 min_lop = df["Tong_ket"].min()
-so_sv_dat = (df["Tổng kết"]>=5.0).sum()
-st.write("Điểm trung bình lớp:,{dtb_lop:.2f}")
+so_sv_dat = (df["Tong_ket"]>=5.0).sum()
+st.write(f"Điểm trung bình lớp:,{dtb_lop:.2f}")
 st.write(f"Điểm cao nhất lớp:{max_lop}")
 st.write(f"Điểm thấp nhất lớp:{min_lop}")
 st.write(f"Số lượng sinh viên đạt(điểm tổng kết>=5.0):{so_sv_dat}sinh viên")
